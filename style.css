@@ -1,0 +1,104 @@
+ #outer-circle {
+   background: #000000;
+   border-radius: 50%;
+   height: 475px;
+   width: 475px;
+   position: relative;
+   margin: 25px 10px 10px 450px;
+   /* 
+    Child elements with absolute positioning will be 
+    positioned relative to this div 
+   */
+ }
+#inner-circle {
+   position: absolute;
+   background: #a9aaab;
+   border-radius: 50%;
+   height: 200px;
+   width: 200px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -115px 0px 0px -115px;
+   /* 
+    Offset the position correctly with
+    minus half of the width and minus half of the height 
+   */
+  border: solid #000 10px;
+  z-index: 4;
+ }
+
+ #tl {
+   position: absolute;
+   background: green;
+   border-radius: 100% 0 0 0;
+   height: 200px;
+   width: 200px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -210px 0px 0px -210px;
+   /* 
+    Offset the position correctly with
+    minus half of the width and minus half of the height (height/2)
+   */
+ }
+
+#tr{
+  position: absolute;
+   background: red;
+   border-radius: 0 100% 0 0 ;
+   height: 200px;
+   width: 200px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -210px 0px 0px 0px;
+}
+
+#bl{
+  position: absolute;
+   background: yellow;
+   border-radius:  0 0 0 100% ;
+   height: 200px;
+   width: 200px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: 0px 0px 0px -210px;
+}
+
+#br{
+  position: absolute;
+   background: blue;
+   border-radius: 0 0 100% 0;
+   height: 200px;
+   width: 200px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: 0px 0px 0px 0px;
+}
+
+#tl, #tr, #bl, #br {
+  border: solid #000 0px;
+}
+
+#counterdisplay{
+  border: solid #000 1px;
+  height: 30px;
+  width:50px;
+  margin: 10px;
+  border-radius: 10px;
+  background:red;
+}
